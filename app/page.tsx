@@ -1,101 +1,72 @@
-import Image from "next/image";
+'use client'
+import {Card} from "@/components/ui/card";
+import AuraBackground from "@/components/ui/aura-background";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+      <main className="flex min-h-screen flex-col items-left justify-between p-24 space-y-16">
+          <section className="mb-32">
+              <div className="w-1/2">
+                  <AuraBackground className="w-1/2 h-1/2 left-[10%] top-[35%]" delay="0s"/>
+                  <AuraBackground className="w-1/2 h-1/2 left-[21%] top-[42%]" delay="-8s"/>
+                  <AuraBackground className="w-1/2 h-1/2 left-[29%] top-[54%]" delay="-7s"/>
+                  <AuraBackground className="w-1/2 h-1/2 left-[32%] top-[37%]" delay="-8s"/>
+                  <AuraBackground className="w-1/2 h-1/2 left-[20%] top-[44%]" delay="-9s"/>
+                  <AuraBackground className="w-1/2 h-1/2 left-[32%] top-[32%]" delay="-10s"/>
+                  <AuraBackground className="w-1/2 h-1/2 left-[10%] top-[60%]" delay="-3s"/>
+              </div>
+              <div className="text-9xl font-semibold flex flex-col items-left justify-between space-y-8 h-1/2">
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+                  <p>UNIQUIE</p>
+                  <p>UNITED</p>
+                  <p>UNBOUNDED</p>
+              </div>
+          </section>
+
+          <section className="flex flex-col between space-y-8">
+          <h1 className="text-4xl font-semibold">Наши достижения</h1>
+              <div className="flex flex-wrap items-stretch gap-4">
+                  <Card className="w-auto p-8 flex flex-col between space-y-4">
+                      <h2 className="text-6xl font-semibold">99.94%</h2>
+                      <p className="w-64 text-xl">SLA</p>
+                  </Card>
+                  <Card className="w-auto p-8 flex flex-col between space-y-4">
+                      <h2 className="text-6xl font-semibold">5</h2>
+                      <p className="w-64 text-xl">Серверов по всему миру</p>
+                  </Card>
+                  <Card className="w-auto p-8 flex flex-col between space-y-4">
+                      <h2 className="text-6xl font-semibold">40+</h2>
+                      <p className="w-64 text-xl">Внутренних сервисов</p>
+                  </Card>
+                  <Card className="w-auto p-8 flex flex-col between space-y-4">
+                      <h2 className="text-6xl font-semibold">3</h2>
+                      <p className="w-64 text-xl">Внешних проекта в инфраструктуре</p>
+                  </Card>
+              </div>
+          </section>
+
+          <section className="flex flex-col between space-y-8">
+              <h1 className="text-4xl font-semibold">О проекте</h1>
+              <p className="text-xl">
+                  UNICORNS Group - Частный люительский проект по разработке и эксплуатации различных PET проектов.
+                  Здесь мы разрабатываем, тестируем, а также развертываем различные веб-приложения, которые на наш
+                  взгляд полезны или прикольны.
+              </p>
+          </section>
+
+          <section className="flex flex-col between space-y-8">
+              <h1 className="text-4xl font-semibold">О финансировании</h1>
+              <p className="text-xl">
+                  Вся инфраструктура содержится за наш счет.
+              </p>
+          </section>
+
+          <section className="flex flex-col between space-y-8">
+              <h1 className="text-4xl font-semibold">Является ли мы хостингом?</h1>
+              <p className="text-xl">
+                  Нет! Это просто инфраструктура для деплоя прикольных штук, мы не оказываем коммерческую эксплуатацию нашей инфраструктуры.
+              </p>
+          </section>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
   );
 }
