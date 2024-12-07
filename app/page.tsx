@@ -8,16 +8,15 @@ export default function Home() {
           <section className="mb-32">
               <div className="w-1/2">
                   <AuraBackground className="w-1/2 h-1/2 left-[10%] top-[35%]" delay="0s"/>
-                  <AuraBackground className="w-1/2 h-1/2 left-[21%] top-[42%]" delay="-8s"/>
+                  <AuraBackground className="w-1/2 h-1/2 left-[21%] top-[42%]" delay="-3s"/>
                   <AuraBackground className="w-1/2 h-1/2 left-[29%] top-[54%]" delay="-7s"/>
-                  <AuraBackground className="w-1/2 h-1/2 left-[32%] top-[37%]" delay="-8s"/>
-                  <AuraBackground className="w-1/2 h-1/2 left-[20%] top-[44%]" delay="-9s"/>
-                  <AuraBackground className="w-1/2 h-1/2 left-[32%] top-[32%]" delay="-10s"/>
-                  <AuraBackground className="w-1/2 h-1/2 left-[10%] top-[60%]" delay="-3s"/>
+                  <AuraBackground className="w-1/2 h-1/2 left-[32%] top-[37%]" delay="-5s"/>
+                  <AuraBackground className="w-1/2 h-1/2 left-[20%] top-[44%]" delay="-11s"/>
+                  <AuraBackground className="w-1/2 h-1/2 left-[32%] top-[32%]" delay="-13s"/>
+                  <AuraBackground className="w-1/2 h-1/2 left-[10%] top-[60%]" delay="-17"/>
               </div>
               <div className="text-9xl font-semibold flex flex-col items-left justify-between space-y-8 h-1/2">
-
-                  <p>UNIQUIE</p>
+                  <p>UNIQUE</p>
                   <p>UNITED</p>
                   <p>UNBOUNDED</p>
               </div>
@@ -28,7 +27,7 @@ export default function Home() {
               <div className="flex flex-wrap items-stretch gap-4">
                   <Card className="w-auto p-8 flex flex-col between space-y-4">
                       <h2 className="text-6xl font-semibold">99.94%</h2>
-                      <p className="w-64 text-xl">SLA</p>
+                      <p className="w-64 text-xl">SLO</p>
                   </Card>
                   <Card className="w-auto p-8 flex flex-col between space-y-4">
                       <h2 className="text-6xl font-semibold">5</h2>
@@ -48,7 +47,7 @@ export default function Home() {
           <section className="flex flex-col between space-y-8">
               <h1 className="text-4xl font-semibold">О проекте</h1>
               <p className="text-xl">
-                  UNICORNS Group - Частный люительский проект по разработке и эксплуатации различных PET проектов.
+                  UNICORNS Group - Частный любительский проект по разработке и эксплуатации различных PET проектов.
                   Здесь мы разрабатываем, тестируем, а также развертываем различные веб-приложения, которые на наш
                   взгляд полезны или прикольны.
               </p>

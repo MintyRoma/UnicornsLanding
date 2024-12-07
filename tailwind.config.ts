@@ -58,7 +58,7 @@ export default {
   		},
 		animation: {
 			pulseColors: 'pulseColors 10s infinite ease-in-out',
-			resize: 'resize 10s infinite ease-in-out',
+			resize: 'resize 13s infinite ease-in-out',
 		},
 		keyframes: {
 			pulseColors: {
