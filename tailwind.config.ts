@@ -58,7 +58,7 @@ export default {
   		},
 		animation: {
 			pulseColors: 'pulseColors 10s infinite ease-in-out',
-			resize: 'resize 13s infinite ease-in-out',
+			resize: 'resize 10s infinite ease-in-out',
 		},
 		keyframes: {
 			pulseColors: {
@@ -69,7 +69,7 @@ export default {
 				'100%': { background: 'radial-gradient(circle, blue, transparent)' },
 			},
 			resize: {
-				'0%, 100%': { transform: 'translate(-50%, -50%) scale(0.7)'},
+				'0%, 100%': { transform: 'translate(-50%, -50%) scale(0.5)'},
 				'50%': { transform: 'translate(-50%, -50%) scale(1)'},
 			},
 		},

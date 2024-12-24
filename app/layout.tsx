@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type {Metadata, Viewport} from "next";
 import {Montserrat} from "next/font/google";
 import "@/app/globals.css";
 import HeaderComponent from "@/components/header-component";
@@ -9,8 +9,17 @@ const inter = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Unicorns Group",
-  description: "Unicorns Group Main Page",
+  description: "Unicorns Group Main Page"
 };
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  // Also supported by less commonly used
+  // interactiveWidget: 'resizes-visual',
+}
 
 export default function RootLayout({
   children,
