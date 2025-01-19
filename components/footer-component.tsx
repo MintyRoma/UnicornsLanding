@@ -12,7 +12,7 @@ function FooterComponent()
             </div>
             <div className="py-4 md:w-1/3">
                 <p>Материалы (изображения) этого сайта защищены на основании законодательства об охране интеллектуальной собственности Российской Федерации</p>
-                <p>© 2020-2024, Unicorns Group</p>
+                <p>© 2020-2025, Unicorns Group</p>
             </div>
         </section>
     </footer>)

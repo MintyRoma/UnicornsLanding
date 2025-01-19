@@ -1,31 +1,14 @@
 'use client'
-import {Card} from "@/components/ui/card";
 import AuraBackground from "@/components/ui/aura-background";
+import Achivements from "@/components/achievements-component";
 
-const achivements = [
-    {
-        objective: "99.94%",
-        name: "SLO"
-    },
-    {
-        objective: "5",
-        name: "Серверов по всему миру"
-    },
-    {
-        objective: "40+",
-        name: "Внутренних сервисов"
-    },
-    {
-        objective: "3",
-        name: "Внешних проектов в инфраструктуре"
-    }
-]
+
 
 export default function Home() {
   return (
       <main className="flex min-h-screen flex-col items-left justify-between m-8 md:m-24 space-y-16">
           <section className="mb-32 w-1/2 h-1/2">
-              <div className="absolute w-screen h-1/3 top-16 md:h-5/6 left-0">
+              <div className="absolute w-full h-1/3 top-16 md:h-5/6 left-0">
                   <AuraBackground className="w-[90vw] h-[90vw] lg:w-[45vw] lg:h-[45vw] left-[10%] top-[35%]" delay="0s" />
                   <AuraBackground className="w-[90vw] h-[90vw] lg:w-[45vw] lg:h-[45vw] left-[21%] top-[42%]" delay="-3s" />
                   <AuraBackground className="w-[90vw] h-[90vw] lg:w-[45vw] lg:h-[45vw] left-[29%] top-[54%]" delay="-7s" />
@@ -43,16 +26,7 @@ export default function Home() {
 
           <section className="flex flex-col between space-y-4 md:space-y-8">
           <h1 className="text-2xl md:text-4xl font-semibold">Наши достижения</h1>
-              <div className="flex flex-wrap content-start items-stretch gap-4">
-                  {achivements.map((achive) =>
-                      (
-                      <Card className="w-auto p-8 flex flex-col between space-y-4" key={achive.name}>
-                          <h2 className="text-4xl md:text-6xl font-semibold">{achive.objective}</h2>
-                          <p className="w-64 text-lg md:text-xl">{achive.name}</p>
-                      </Card>
-                      )
-                  )}
-              </div>
+              <Achivements/>
           </section>
 
           <section className="flex flex-col between space-y-4 md:space-y-8">
