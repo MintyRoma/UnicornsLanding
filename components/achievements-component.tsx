@@ -1,12 +1,12 @@
-import {Card} from "@/components/ui/card";
+import {Card, CardDescription } from "@/components/ui/card";
 
 const achivements = [
     {
-        objective: "99.95%",
-        name: "SLI"
+        objective: "99.9%",
+        name: "SLI за 2025 год"
     },
     {
-        objective: "5",
+        objective: "7",
         name: "Серверов по всему миру"
     },
     {
@@ -25,9 +25,9 @@ export default function Achivements()
         <div className="flex flex-wrap content-start items-stretch gap-4">
             {achivements.map((achive) =>
                 (
-                    <Card className="w-auto p-8 flex flex-col between space-y-4" key={achive.name}>
+                    <Card className="w-full md:w-[calc(50%-0.5rem)] lg:w-[calc(25%-0.75rem)] p-6 md:p-8 flex flex-col between space-y-4" key={achive.name}>
                         <h2 className="text-4xl md:text-6xl font-semibold">{achive.objective}</h2>
-                        <p className="w-64 text-lg md:text-xl">{achive.name}</p>
+                        <CardDescription>{achive.name}</CardDescription>
                     </Card>
                 )
             )}

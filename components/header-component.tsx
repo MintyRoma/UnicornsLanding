@@ -39,7 +39,7 @@ function HeaderComponent()
                             {
                                 sites.map((site) => (
                                     <NavigationMenuItem key={site.name}>
-                                        <Link href={site.href} legacyBehavior passHref>
+                                        <Link href={site.href}>
                                             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                                 {site.name}
                                             </NavigationMenuLink>

@@ -1,6 +1,6 @@
 'use client'
-import AuraBackground from "@/components/ui/aura-background";
 import Achivements from "@/components/achievements-component";
+import { StarsBackground } from "@/components/animate-ui/components/backgrounds/stars";
 
 
 
@@ -8,15 +8,7 @@ export default function Home() {
   return (
       <main className="flex min-h-screen flex-col items-left justify-between m-8 md:m-24 space-y-16">
           <section className="mb-32 w-1/2 h-1/2">
-              <div className="absolute w-full h-1/3 top-16 md:h-5/6 left-0">
-                  <AuraBackground className="w-[90vw] h-[90vw] lg:w-[45vw] lg:h-[45vw] left-[10%] top-[35%]" delay="0s" />
-                  <AuraBackground className="w-[90vw] h-[90vw] lg:w-[45vw] lg:h-[45vw] left-[21%] top-[42%]" delay="-3s" />
-                  <AuraBackground className="w-[90vw] h-[90vw] lg:w-[45vw] lg:h-[45vw] left-[29%] top-[54%]" delay="-7s" />
-                  <AuraBackground className="w-[90vw] h-[90vw] lg:w-[45vw] lg:h-[45vw] left-[32%] top-[37%]" delay="-5s" />
-                  <AuraBackground className="w-[90vw] h-[90vw] lg:w-[45vw] lg:h-[45vw] left-[20%] top-[44%]" delay="-11s" />
-                  <AuraBackground className="w-[90vw] h-[90vw] lg:w-[45vw] lg:h-[45vw] left-[32%] top-[32%]" delay="-13s" />
-                  <AuraBackground className="w-[90vw] h-[90vw] lg:w-[45vw] lg:h-[45vw] left-[10%] top-[60%]" delay="-17s" />
-              </div>
+                  <StarsBackground starColor="#8769fc" className="absolute w-full h-3/5 top-0 md:h-5/6 left-0"></StarsBackground>
               <div className="size-full lg:text-9xl md:text-6xl text-4xl font-semibold flex flex-col items-left justify-between h-1/2 space-y-2">
                   <p>UNIQUE</p>
                   <p>UNITED</p>
